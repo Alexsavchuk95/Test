@@ -1,0 +1,94 @@
+/* ==========MEDIA_DESCTOP=========== */
+@media (min-width: 1120px) {
+    .wrapper {
+        padding: 0px;
+        padding-bottom: 50px;
+        height: 100%;
+    }
+
+    .container {
+        max-width: 1260px;
+        height: 504px;
+    }
+
+    header {
+        background: inherit;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        max-width:1260px ;
+        height: 50px;
+    }
+
+    .desctop__title {
+        display: block;
+        color: rgb(62, 124, 177);
+        margin: 0px;
+        margin-left: 132px;
+    }
+
+    .mobile__title {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .cnt-persons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cnt__person{
+        border-bottom: 0px solid;
+        margin-bottom: 0px;
+    }
+
+    .person1 {
+        min-width: 310px;
+        height: 295px;
+        background-size: cover;
+    }
+
+    .person2 {
+        background-image: url(../assets/img/person22.png);
+        min-width: 370px;
+        height: 295px;
+        background-position: inherit;
+    }
+
+    .cnt {
+        display: block;
+        top: 73%;
+        left: 25%;
+    }
+
+    h5 {
+        margin-top: 36px;
+        text-transform: uppercase;
+    }
+
+    button {
+        background: rgb(62, 124, 177);
+        box-shadow: 3px 34px 53px -13px rgba(62,124,177,1);
+        margin-bottom: 18px;
+    }
+    
+    .info {
+        text-align: center;
+        max-width: 218px;
+    }
+
+    #per__mobile{
+        display: none;
+    }
+
+    #per__descrop{
+        display: block;
+    }
+
+    
+}

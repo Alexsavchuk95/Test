@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background: #000;
+    padding: 0px 8px;
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.heading {
+    max-width: 1000px;
+    height: 40px;
+    margin: 0 auto ;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto ;
+    background: #fff;
+    position: relative;
+}
+
+
+header {
+    padding: 10px 10px;
+    background: #491b6b;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo {
+    padding-top: 8px;
+}
+ 
+
+span {
+    font-family: 'Khand', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#cancer {
+    padding: 16px 0;
+}
+
+.patient {
+    padding: 16px 0;
+}
+
+.path {
+    vertical-align: text-top;
+}
+
+.mobile__title, .desctop__title{
+    font-size: 39px;
+    font-family: 'Khand', sans-serif;
+    margin-bottom: 50px;
+    color: #491b6b;
+    font-weight: bold;
+    line-height: 1.231;
+    text-align: center;
+}
+
+.desctop__title {
+    display: none;
+}
+
+.mobile__title{
+    padding: 0px 20px;
+}
+
+a{
+    color: #868686;
+    letter-spacing: -0.5px;
+}
+
+
+button:active, button:focus, input {
+    outline: none;
+  }
+
+
+/* ========Mobile_NAVIGATION_BUTTON========= */
+
+.menu-icon {
+    z-index: 3;
+    position: relative;
+	width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-icon-line {
+	position: relative;
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+}
+
+.menu-icon-line::before {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	content: '';
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon-line::after {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	content: '';
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+	background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+	transform: rotate(45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* =============MOBILE_NAVIGATION=========== */
+
+.list-mobile{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    padding: 100px 30px;
+    right: 0px;
+    top: 0;
+    width: 200px;
+    background-color:rgba(73,27,107,0.6);
+}
+
+
+.list-mobile--active {
+    display: block;
+    width: 100%;
+}
+
+/* ============SECTION WITH PERSONS================= */
+
+.cnt__person {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 50px;
+}
+
+.cnt__person:last-child{
+    margin-bottom: 0px;
+}
+
+
+.person1 {
+    background-image: url(../assets/img/person12.png);
+    background-repeat: no-repeat;
+    min-width: 218px;
+    height: 216px;
+    background-position: right;
+}
+
+.info {
+    max-width: 200px;
+    text-align: end;
+    padding-right: 8px;
+}
+
+h5 {
+    font-size: 40px;
+    font-family: 'Khand', sans-serif;
+    color: rgb(13, 13, 13);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.text {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 1.375;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 110px;
+    height: 34px;
+    border: 0px solid;
+    background: #491b6b;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.2; 
+}
+
+.grey {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(87, 87, 87);
+    line-height: 2;
+}
+
+.person2 {
+    background-image: url(../assets/img/person2Mobile.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-width: 218px;
+    height: 224px;
+    background-position: right;
+}
+
+#per__descrop{
+    display: none;
+}
+
+.cnt {
+    padding: 0px 20px;
+    position: absolute;
+    display: none;
+}
+
+.section-text {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(87, 87, 87);
+    line-height: 2;
+    text-align: left;
+}
+
+/* ===========OPEN WINDOWS============= */
+
+article {
+    height: 126px;
+}
+
+.openBlock {
+    position: absolute;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+    background: #fff;
+    z-index: 4;
+}
+
+.Block1{
+    bottom: 0px;
+}
+
+
+.openBlock--active{
+    /* transform: translateY(-87%); */
+    height: 90%;
+    width: 100%;
+}
+
+
+/* ============PLUS TOGLE================ */
+
+.plus-icon {
+    z-index: 19;
+    position: relative;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.plus-icon-line {
+    position: relative;
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+}
+
+.plus-icon-line::before {
+	position: absolute;
+	left: 0;
+    top: 0;
+    transform: rotate(90deg);
+	content: '';
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.plus-icon.plus-icon-active .plus-icon-line {
+	background-color: transparent;
+}
+
+.plus-icon.plus-icon-active .plus-icon-line::before {
+	transform: rotate(0deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+/* ============================================ */
+
+h6 {
+    color: rgb(62, 124, 177);
+    text-transform: uppercase;
+    font-family: 'Khand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+article {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+
+.TEST {
+    position: absolute;
+    height: 126px;
+    width: 100%;
+}
+
+.test-active {
+    height: 100%;
+    top: 0;
+}
